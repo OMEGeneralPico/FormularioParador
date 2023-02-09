@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- OpenGraph -->
+  <meta property="og:url" content="https://omegeneralpico.github.io/transparenciaDic2022/"/>
+  <meta property="og:title" content="Web de transparencia 2022"/>
+  <meta property="og:image" content="https://www.generalpico.gov.ar/frontend/images/generalpico/2020/header/Blanco%20logo.png"/>
+  <meta property="og:description" content="Web de transparencia desarrollada por la Oficina Municipal de Estadisticas "/>
+  <meta property="og:type" content="website"/>
+  <!--  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Formulario de inscripción">
+  <meta name="author" content="Julio Caba">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/gif" sizes="96x96" href="https://www.generalpico.gov.ar/Arbol-favico.gif">
+  <title>Formulario de inscripción a la capacitación: Framework PHP</title>
+  <link rel="stylesheet" href="files/css/style.css">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+  <img class="img" src="files/img/logo.png" width="30%">
+  <div class="container pt-2 mt-2">
+	<h1 class="text-center pt-1 pb-1 fw-bold">Introducción a framework PHP</h1>
+	<h5>En esta capacitación vamos a ver el framework laravel, los detalles de su estructura, conocimientos teóricos necesarios y metodologías de trabajo, también aplicaremos lo aprendido en un proyecto de final de curso.</h5>
+    <p><strong>Nota: </strong> esta capacitación requiere de ciertos conocimientos previos</p>  
+  </div>  
+  <div class="container text-center pt-3 mt-3">    
+    <form name="gform" id="gform" enctype="text/plain"
+                        action="https://docs.google.com/forms/d/e/1FAIpQLSf1MZGCMYGNgfRVCz1EXe6GBh6C7qdKe-7oGFS4ZQiagl3Msg/formResponse?"
+                        target="hidden_iframe" onsubmit="submitted=true;">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label id="name-label" for="name">Nombre:</label>
+						<input type="text" name="entry.1340507379" id="entry.1340507379" placeholder="Ingrese su nombre completo" class="form-control" required>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label id="email-label" for="email">Email:</label>
+						<input type="email" name="entry.1154531005" id="entry.1154531005" placeholder="Ingrese su email" class="form-control" required>
+					</div>
+				</div>
+			</div>			
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label id="number-label" for="number">DNI</label>
+						<input type="text" name="entry.411213780" id="entry.411213780" class="form-control" placeholder="Ingrese su DNI" required>
+					</div>
+				</div>
+        <div class="col-md-6">
+					<div class="form-group">
+						<label id="number-label" for="number">Teléfono:</label>
+						<input type="text" name="entry.1339548199" id="entry.1339548199" class="form-control" placeholder="Ingrese su teléfono" required>
+					</div>
+				</div>
+				
+			</div>
+			<div class="row">
+				<div class="col-md-3"></div>
+        		<div class="col-md-6">
+					<div class="form-group">
+						<label>¿Participó de alguna de estas capacitaciones?</label>
+						<select name="entry.1660908816" id="entry.1660908816" class="form-control" required>
+							<option disabled selected value>Seleccione una opción...</option>
+							<option value="Introduccion">Introducción a la programación web (Punto Digital)</option>
+							<option value="Argentina">Argentina programa</option>
+							<option value="Programacion">Programación web (Punto Digital)</option>
+							<option value="Plazti">Plazti, Udemy, etc.</option>
+							<option value="Otras">Otras</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-md-3"></div>        		
+			</div>
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+					<div class="form-group">
+						<label>Detalle las  tecnologías que conoce (HTML, CSS, JS, etc.):</label>
+						<textarea class="form-control" name="entry.900006893" id="entry.900006893" placeholder="Nos interesa saber su nivel de conocimiento" required></textarea>
+					</div>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<button type="submit" id="form-submit" class="btn btn-success btn-block">Enviar</button>
+				</div>
+			</div>
+
+		</form>
+		<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                        onload="if(submitted) {window.location='https://julio-caba.github.io/formulario/';}"></iframe>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="files/js/mascara.js"></script>  
+<script type="text/javascript">
+    $('#gform').on('submit', function (e) {
+      $('#gform *').fadeOut(2000);
+    });
+  </script>
+</body>
+</html>
