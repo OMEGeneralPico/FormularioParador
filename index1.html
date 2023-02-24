@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,8 +11,8 @@
 	<meta property="og:image"
 		content="https://www.generalpico.gov.ar/frontend/images/generalpico/2020/header/Blanco%20logo.png" />
 	<meta property="og:description"
-		content="Encuesta el parador"/>
-	<meta property="og:type" content="website"/>
+		content="Encuesta el parador " />
+	<meta property="og:type" content="website" />
 	<!--  -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -28,6 +29,7 @@
 		integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
+
 <body>
 	<img class="img" src="files/img/logo.png" width="30%">
 	<div class="container pt-2 mt-2">
@@ -39,8 +41,7 @@
 			action="https://docs.google.com/forms/d/e/1FAIpQLSfWhcCod_nW_YSdtJs7cqPLJPI39VxA-_h7vHpytXSH0DUPMg/formResponse?"
 			target="hidden_iframe" onsubmit="submitted=true;">
 			<div class="row">
-				<div class="col-md-2"></div>
-				<div class="col-md-8">
+				<div class="col-md-6">
 					<div class="form-group">
 						<label>Sector al que pertenece</label>
 						<select name="entry.2063734318" id="entry.2063734318" class="form-control" required>
@@ -54,34 +55,29 @@
 							<option value="Restaurantes">Restaurantes</option>
 						</select>
 					</div>
-				</div> 
-				<div class="col-md-2"></div>        
-			</div>   
-			<div class="row">
-				<div class="col-md-2"></div>
-				<div class="col-md-8 d-none" id="rubro">         
 				</div>
-				<div class="col-md-2"></div>
-			</div> 
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Si la respuesta fue emprendedor o artesano, ¿que rubro?</label>
+							<input type="text" name="entry.531915248" id="entry.531915248" placeholder="Ingrese su rubro"
+							class="form-control" >
+					</div>
+				</div>
+			</div>
 			<div class="row">
-				<div class="col-md-2"></div>
-				<div class="col-md-8">
+				<div class="col-md-6">
 					<div class="form-group">
 						<label>¿Hubo un aumento de ventas/ganancias en comparación con el verano pasado?</label>
 						<select name="entry.793170147" id="entry.793170147" class="form-control" >
 							<option disabled selected value>Seleccione una opción...</option>
-							<option value="Si"  name="seleccion" onclick="showDiv()">Si</option>
-							<option value="No"  name="seleccion" onclick="showDiv()">No</option>
+							<option value="Si">Si</option>
+							<option value="No">No</option>
 						</select>
 					</div>
 				</div>
-				<div class="col-md-2"></div>
-			</div>
-			<div class="row">
-				<div class="col-md-2"></div>
-				<div class="col-md-8 d-none" id="ganado">
+				<div class="col-md-6">
 					<div class="form-group">
-						<label> ¿Cuál cree que fue el porcentaje de aumento?</label>
+						<label>Si la respuesta fue si ¿Cuál cree que fue el porcentaje de aumento?</label>
 						<select name="entry.1280974745" id="entry.1280974745" class="form-control" >
 							<option disabled selected value>Seleccione una opción...</option>
 							<option value="mas-de-15">Más del 15%</option>
@@ -92,27 +88,22 @@
 						</select>
 					</div>
 				</div>
-				<div class="col-md-2"></div>
+
 			</div>
 			<div class="row">
-				<div class="col-md-2"></div>
-				<div class="col-md-8">
+				<div class="col-md-6">
 					<div class="form-group">
 						<label>¿Hubo clientes fuera de Pico?</label>
 						<select name="entry.611016409" id="entry.611016409" class="form-control">
 							<option disabled selected value>Seleccione una opción...</option>
-							<option value="Si" name="select" onclick="showDiv2()">Si</option>
-							<option value="No" name="select" onclick="showDiv2()">No</option>
+							<option value="Si">Si</option>
+							<option value="No">No</option>
 						</select>
 					</div>
 				</div>
-				<div class="col-md-2"></div>        
-			</div>
-			<div class="row">
-				<div class="col-md-2"></div>
-				<div class="col-md-8 d-none"  id="clientes">
+				<div class="col-md-6">
 					<div class="form-group">
-						<label>¿De que localidad/provincia?</label>
+						<label>Si la respuesta fue si ¿De donde?</label>
 						<select name="entry.1451520706" id="entry.1451520706" class="form-control" >
 							<option disabled selected value>Seleccione una opción...</option>
 							<option value="Castex">Castex</option>
@@ -124,11 +115,10 @@
 						</select>
 					</div>
 				</div>
-				<div class="col-md-2"></div>
+
 			</div>
 			<div class="row">
-				<div class="col-md-2"></div>
-				<div class="col-md-8">
+				<div class="col-md-6">
 					<div class="form-group">
 						<label>¿Está de acuerdo con la utilización del sector del predio?</label>
 						<select name="entry.1877901786" id="entry.1877901786" class="form-control" required>
@@ -138,11 +128,7 @@
 						</select>
 					</div>
 				</div>
-				<div class="col-md-2"></div>
-			</div>
-			<div class="row">
-				<div class="col-md-2"></div>
-				<div class="col-md-8">
+				<div class="col-md-6">
 					<div class="form-group">
 						<label>¿Está de acuerdo con el lugar donde se realizaron los espectáculos?</label>
 						<select name="entry.61393220" id="entry.61393220" class="form-control" required>
@@ -152,7 +138,7 @@
 						</select>
 					</div>
 				</div>
-				<div class="col-md-2"></div>
+
 			</div>
 			<div class="row">
 				<div class="col-md-2"></div>
@@ -170,17 +156,19 @@
 					<button type="submit" id="form-submit" class="btn btn-success btn-block">Enviar</button>
 				</div>
 			</div>
+
 		</form>
 		<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
 			onload="if(submitted) {window.location='https://omegeneralpico.github.io/FormularioParador/';}"></iframe>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.6.3.min.js"
 		integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-	<script src="files/js/selects.js"></script>
+	<script src="files/js/mascara.js"></script>
 	<script type="text/javascript">
 		$('#gform').on('submit', function (e) {
 			$('#gform *').fadeOut(2000);
 		});
-	</script>	
+	</script>
 </body>
+
 </html>
